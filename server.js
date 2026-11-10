@@ -59,7 +59,7 @@ app.post('/api/create-payment', (req, res) => {
       customer_phone: customerPhone || "9999999999",
       customer_name: customerName || "Village Customer"
     },
-    order_meta: { return_url: "https://inminutes.online" }
+    order_meta: { return_url: "https://inminutes.online/?order_id={order_id}" }
   });
 
   const options = {
